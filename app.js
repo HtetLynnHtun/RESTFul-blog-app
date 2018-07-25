@@ -7,7 +7,7 @@ let app = express();
 
 //========================App Config=============================
 // connect to database
-mongoose.connect("mongodb://localhost:27017/restful_blog_app", {useNewUrlParser: true});
+mongoose.connect(process.env.MONGOLAB_URI, {useNewUrlParser: true});
 
 // set up view engine
 app.set("view engine", "ejs");
