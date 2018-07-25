@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Htet Lynn Htun",
@@ -17,6 +18,7 @@
     "mongoose": "^5.2.5"
   },
   "engines": {
-    "node": "10.6.0"
+    "node": "10.6.0",
+    "npm": "6.1.0"
   }
 }
