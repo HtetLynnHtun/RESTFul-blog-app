@@ -99,7 +99,7 @@ app.get("/blogs/:id", function(req, res){
 
 // EDIT - show edit form to edit a specific blog post
 app.get("/blogs/:id/edit", function(req, res){
-    // read(R) a specific data(blog post) from data base
+    // read a specific data(blog post) from data base
     Blog.findById(req.params.id, function(err, foundBlog){
         if(err){
             console.log(err);
